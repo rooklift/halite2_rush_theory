@@ -1,4 +1,4 @@
-My bot is pretty ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 rush code.
+My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is pretty ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 rush code.
 
 # Theory: 6 Ship Battles
 
