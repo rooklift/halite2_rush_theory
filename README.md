@@ -46,7 +46,7 @@ Our theory also doesn't take into account differences in ship health. If a 63 he
 
 Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that I have perfect prediction to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function. [This game](https://halite.io/play/?game_id=7002532) shows the result, at about turn 168.
 
-Sometimes the enemy [just runs away](https://halite.io/play/?game_id=7069201)...
+Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=7069201)...
 
 There are various other difficulties. Suppose the enemy docks 1 ship and rushes with 2. What should we do? We might end up dancing with the 2 ships while the enemy is happily producing new ships.
 
