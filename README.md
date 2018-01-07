@@ -2,7 +2,7 @@ My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is pretty ordinary
 
 # Theory: 6 Ship Battles
 
-The case we are most interested in is where 3 ships from each team are in close proximity. What we want is to do more damage to the enemy than they do to us. However, players make moves simultaneously, so it is impossible to make moves that are guaranteed to do this.
+The case we are most interested in is where 3 ships from each team are in close proximity. What we want is to do more damage to the enemy ships than they do to us. However, players make moves simultaneously, so it is impossible to make moves that are guaranteed to do this.
 
 On the other hand, it *is* possible to make moves that can't possibly lose, but which might win if the opponent does the Wrong Thing, which is a common event.
 
@@ -40,7 +40,7 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. Ideally, one could set up the fitness function to gently steer the ships away from the edge before they got there; I never got around to this.
 
-Out theory also doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. I never bothered worrying about this.
+Our theory also doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. I never bothered worrying about this.
 
 Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that I have perfect prediction to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function. [This game](https://halite.io/play/?game_id=7002532) shows the result, at about turn 168.
 
