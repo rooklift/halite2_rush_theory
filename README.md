@@ -11,6 +11,7 @@ Consider the following. Every ship can, by moving at speed 7, do damage to enemi
 Therefore, certain sweet spots emerge on the map. If we put our ships in those sweet spots, we can't lose, but we might win.
 
 [DIAGRAM]
+![Sweet Spots](https://raw.githubusercontent.com/fohristiwhirl/halite2_rush_theory/master/ranges.png)
 
 On the left are the threat ranges of the three Blue ships - i.e. how far they can do damage *after they move*. On the right are highlighted the sweet spots that the Pink spots should try to reach.
 
