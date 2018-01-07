@@ -19,6 +19,8 @@ When Pink places his ships in the sweet spots, one of two things will happen:
 * Blue will take the same amount of damage as Pink (possibly zero).
 * Blue will take more damage than pink, because one of Blue's ships came within range of two (or three) Pink ships.
 
+If this theory is applied properly, the result should look [something like this](https://halite.io/play/?game_id=7065074).
+
 # Practice: Genetic Algorithm
 
 A smarter person than me might use mathematics to put his ships in the sweet spots. However, I chose to use a Genetic Algorithm, which works as follows. First, we generate a random "genome" (list of moves) and then do the following:
