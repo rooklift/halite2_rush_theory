@@ -1,8 +1,8 @@
-## *Theory and Practice of Halite 2 Rushes*
+# *Theory and Practice of Halite 2 Rushes*
 
 My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is pretty ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 rush code.
 
-# Theory: 6 Ship Battles
+## Theory: 6 Ship Battles
 
 The case we are most interested in is where 3 ships from each team are in close proximity. What we want is to do more damage to the enemy ships than they do to us. However, players make moves simultaneously, so it is impossible to make moves that are guaranteed to do this.
 
@@ -23,7 +23,7 @@ When Pink places his ships in the sweet spots, one of two things will happen:
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be defeated ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
 
-# Practice: Genetic Algorithm
+## Practice: Genetic Algorithm
 
 A smarter person than me might use mathematics to put his ships in the sweet spots. However, I chose to use a Genetic Algorithm, which works as follows. First, we generate a random "genome" (list of moves) and then do the following:
 
@@ -34,13 +34,13 @@ A smarter person than me might use mathematics to put his ships in the sweet spo
 
 The fitness function I use is based on getting ships into the sweet spot where possible, or near it otherwise; while not crashing ships into each other, or into planets, or into the game edges.
 
-# Practice: Metropolis Coupling
+## Practice: Metropolis Coupling
 
 When I constructed my Genetic Algorithm, I wasn't sure exactly what fitness function I would end up using. But I wanted to avoid local optima. To avoid these, I run multiple chains of evolution at once, with different "heats". Hot chains are allowed to accept bad mutations (the hotter the chain, the looser its standards are). Between iterations, the chains are sorted so that the colder chains have the better genomes. In this way, the cold chains can be pulled out of local optima. I believe this whole process is called "Metropolis Coupling".
 
 Honestly I'm not sure how useful it is. In some rare cases it can find superior solutions.
 
-# Problems
+## Problems
 
 Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. I fixed this in a later version by making the fitness function dislike being near the edge; in [this game](https://halite.io/play/?game_id=7179853) the ships steer sharply around turn 33 because of that.
 
@@ -52,13 +52,13 @@ Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?ga
 
 There are various other difficulties. Suppose the enemy docks 1 ship and rushes with 2. What should we do? We might end up dancing with the 2 ships while the enemy is happily producing new ships.
 
-# Defense
+## Defense
 
 If I'm not rushing myself, I defend by noticing I'm getting rushed and undocking. One thing few players spotted is that you can issue a thrust command during the final step of undocking (where `DockedStatus == UNDOCKING`) *and it will work*. You can also issue an undock command during the final step of docking.
 
 These two facts allow me to make useful moves 2 turns earlier than a naive defender; after undocking I simply transition into rush mode.
 
-# 4 Player Games
+## 4 Player Games
 
 In 4 player games, there are initially two sub-games: the left side 1v1, and the right side 1v1. Rushes are therefore possible, but there's a sort of prisoner's dilemma: if I rush my opponent, and he defends adequately, we are likely to get 3rd and 4th. If we both play normally, we might both get a chance at 1st or 2nd.
 
