@@ -1,4 +1,4 @@
-# Fohristiwhirl's *Theory and Practice of Halite 2 Rushes*
+## *Theory and Practice of Halite 2 Rushes*
 
 My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is pretty ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 rush code.
 
