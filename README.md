@@ -25,7 +25,7 @@ If this theory is applied properly, the result should look [something like this]
 
 A smarter person than me might use mathematics to put his ships in the sweet spots. However, I chose to use a Genetic Algorithm, which works as follows. First, we generate a random "genome" (list of moves) and then do the following:
 
-* Mutate the genome randomly, giving us a new list of moves.
+* Mutate the genome randomly, giving one of the ships a new move.
 * Simulate the result, and score it according to some "fitness" function.
 * If the new genome is good, keep it, otherwise discard.
 * Repeat.
