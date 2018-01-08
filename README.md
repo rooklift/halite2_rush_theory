@@ -19,7 +19,7 @@ When Pink places his ships in the sweet spots, one of two things will happen:
 * Blue will take the same amount of damage as Pink (possibly zero).
 * Blue will take more damage than pink, because one of Blue's ships came within range of two (or three) Pink ships.
 
-If this theory is applied properly, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots [can be defeated](https://halite.io/play/?game_id=7102762).
+If this theory is applied properly, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even [rather strong](https://halite.io/play/?game_id=6987743) bots [can be defeated](https://halite.io/play/?game_id=7102762).
 
 # Practice: Genetic Algorithm
 
