@@ -30,7 +30,7 @@ A smarter person than me might use mathematics to put his ships in the sweet spo
 * If the new genome is good, keep it, otherwise discard.
 * Repeat.
 
-The fitness function I use is based on getting ships into the sweet spot, while not crashing into each other, or into planets, or into the game edges.
+The fitness function I use is based on getting ships into the sweet spot where possible, or near it otherwise; while not crashing ships into each other, or into planets, or into the game edges.
 
 # Practice: Metropolis Coupling
 
