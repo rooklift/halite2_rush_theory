@@ -10,7 +10,7 @@ On the other hand, it *is* possible to make moves that can't possibly lose, but 
 
 Consider the following. Every ship can -- by moving at speed 7 -- do damage to enemies that are up to 13 units away from its starting location, because weapon range is effectively 6 (measuring centre to centre).
 
-Therefore, certain sweet spots emerge on the map. If we put our ships in those sweet spots, we can't lose, but we might win.
+Therefore, certain sweet spots emerge on the map, where *at most* one enemy ship can come into range. If we put all our ships in those sweet spots, we can't lose, but we might win.
 
 ![Sweet Spots](https://raw.githubusercontent.com/fohristiwhirl/scraps/master/ranges.gif)
 
