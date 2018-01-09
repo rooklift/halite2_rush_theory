@@ -52,7 +52,7 @@ Sometimes two bots will get into a situation where neither is willing to move. I
 
 Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=7069201)...
 
-There are various other difficulties. Suppose the enemy docks 1 ship and rushes with 2. What should we do? We might end up dancing with the 2 ships while the enemy is happily producing new ships.
+There are various other difficulties. Suppose the enemy docks 1 ship and rushes with 2. What should we do? We might end up dancing with the 2 ships while the enemy is happily producing new ships. I shouldn't have won [this game](https://halite.io/play/?game_id=7226052).
 
 ## Defense
 
