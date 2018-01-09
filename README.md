@@ -42,9 +42,9 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 ## Problems
 
-Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. I fixed this in a later version by making the fitness function dislike being near the edge; in [this game](https://halite.io/play/?game_id=7179853) the ships steer sharply around turn 33 because of that.
+Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. I fixed this in a later version by making the fitness function dislike being near the edge.
 
-Planets sometimes cause the same problem. At turn 102 in [this game](https://halite.io/play/?game_id=7256973), one of my ships can't make any good move because it's come too close to a planet; it takes 2 hits and ultimately this loses the game.
+Planets sometimes cause the same problem. At turn 11 in [this game](https://halite.io/play/?game_id=7328811), one of my ships can't make any good move because it's come too close to a planet.
 
 Our theory also doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this.
 
