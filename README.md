@@ -1,6 +1,8 @@
 # Theory and Practice of Halite 2 Rushes
 
-My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is pretty ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 rush code.
+My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 melee code. In the situations it was designed for, it's one of the best bots there is. Sadly, these situations only arose in about 13.77% of games...
+
+At the time of writing, looking at my last 10,000 games, exactly 1,377 of them could be considered rush games (10 or fewer ships produced). In those games, my win/loss record is **1090-287**.
 
 ## Theory: 6 Ship Battles
 
