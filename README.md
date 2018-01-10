@@ -42,17 +42,15 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 ## Problems
 
-Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. I fixed this in a later version by making the fitness function dislike being near the edge.
+Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
 
-Planets sometimes cause the same problem. At turn 11 in [this game](https://halite.io/play/?game_id=7328811), one of my ships can't make any good move because it's come too close to a planet.
+Our theory doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this, because it didn't seem to matter.
 
-Our theory also doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this.
-
-Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that I have perfect prediction to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
+Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. I fixed this in a later version by making the fitness function dislike being near the edge. Planets sometimes cause the same problem. At turn 11 in [this game](https://halite.io/play/?game_id=7328811), one of my ships can't make any good move because it's come too close to a planet. Again, change the fitness function...
 
 Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=7069201)...
 
-The biggest problems come in situations where the enemy splits up. For example, I shouldn't have won [this game](https://halite.io/play/?game_id=7226052). This sort of thing was my Achilles' Heel, really. In [this game](https://halite.io/play/?game_id=7361129) at around turn 9, the Genetic Algorithm must split the ships so as to get near both groups of enemies. Unfortunately it makes the wrong choice of how to do this. I couldn't think of a good way to make the fitness function prefer the correct split.
+The biggest problems come when the enemy splits up. For example, I shouldn't have won [this game](https://halite.io/play/?game_id=7226052). This sort of thing was my Achilles' Heel, really. In [this game](https://halite.io/play/?game_id=7361129) at around turn 9, the Genetic Algorithm must split the ships so as to get near both groups of enemies. Unfortunately it makes the wrong choice of how to do this. I couldn't think of a good way to make the fitness function prefer the correct split.
 
 ## Defense
 
