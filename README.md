@@ -42,7 +42,7 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 ## Problems
 
-Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
+Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function based on expected damage. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
 
 Our theory doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this, because it didn't seem to matter.
 
