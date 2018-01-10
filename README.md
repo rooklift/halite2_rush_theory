@@ -14,7 +14,7 @@ Therefore, certain sweet spots emerge on the map where *at most* one enemy ship 
 
 ![Sweet Spots](https://raw.githubusercontent.com/fohristiwhirl/scraps/master/ranges.gif)
 
-On the left are the threat ranges of the three Blue ships - i.e. how far they can do damage *after they move*. On the right are highlighted the sweet spots that the Pink spots should try to reach.
+On the left are the threat ranges of the three Blue ships - i.e. how far they can do damage *after they move*. On the right are highlighted the sweet spots that the Pink ships should try to reach.
 
 When Pink places his ships in the sweet spots, one of two things will happen:
 
