@@ -2,8 +2,6 @@
 
 My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 melee code. In the situations it was designed for, it's one of the best bots there is. Sadly, those situations arose about once every seven games...
 
-At the time of writing (Jan 10th), looking at my last 10,000 games, exactly 1,377 of them could be considered 1v1 rush games (2 players only, 10 or fewer ships produced). In those games, my win/loss record was **1090-287**.
-
 ## Theory: 6 Ship Battles
 
 The case we are most interested in is where 3 ships from each team are in close proximity. What we want is to do more damage to the enemy ships than they do to us. However, players make moves simultaneously, so it is impossible to make moves that are guaranteed to do this.
@@ -46,9 +44,11 @@ When I constructed my Genetic Algorithm, I wasn't sure exactly what fitness func
 
 Honestly I'm not sure how useful it is. In some rare cases it can find superior solutions.
 
-## Example Games
+## Example Games and Results
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
+
+At the time of writing (Jan 10th), looking at my last 10,000 games, exactly 1,377 of them could be considered 1v1 rush games (2 players only, 10 or fewer ships produced). In those games, my win/loss record was **1090-287**.
 
 ## Problems
 
