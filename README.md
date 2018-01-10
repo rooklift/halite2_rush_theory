@@ -23,7 +23,7 @@ When Pink places his ships in the sweet spots, one of two things will happen:
 
 ## Real World Example
 
-Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely.
+Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely, and the enemy gets obliterated.
 
 ![Sweet Spots 2](https://raw.githubusercontent.com/fohristiwhirl/scraps/master/ranges2.gif)
 
