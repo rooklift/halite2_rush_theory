@@ -23,6 +23,10 @@ When Pink places his ships in the sweet spots, one of two things will happen:
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be defeated ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
 
+Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely.
+
+![Sweet Spots 2](https://raw.githubusercontent.com/fohristiwhirl/scraps/master/ranges2.gif)
+
 ## Practice: Genetic Algorithm
 
 A smarter person than me might use mathematics to put his ships in the sweet spots. However, I chose to use a Genetic Algorithm, which works as follows. First, we generate a random "genome" (list of moves) and then do the following:
