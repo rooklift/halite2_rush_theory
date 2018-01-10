@@ -48,7 +48,7 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 ## Example Games
 
-Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be defeated ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
+Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
 
 ## Problems
 
