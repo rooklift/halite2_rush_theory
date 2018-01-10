@@ -21,7 +21,7 @@ When Pink places his ships in the sweet spots, one of two things will happen:
 * Blue will take the same amount of damage as Pink (possibly zero).
 * Blue will take more damage than pink, because one of Blue's ships came within range of two (or three) Pink ships.
 
-Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be defeated ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
+## Real World Example
 
 Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely.
 
@@ -43,6 +43,10 @@ The fitness function I use is based on getting ships into the sweet spot where p
 When I constructed my Genetic Algorithm, I wasn't sure exactly what fitness function I would end up using. But I wanted to avoid local optima. To avoid these, I run multiple chains of evolution at once, with different "heats". Hot chains are allowed to accept bad mutations (the hotter the chain, the looser its standards are). Between iterations, the chains are sorted so that the colder chains have the better genomes. In this way, the cold chains can be pulled out of local optima. I believe this whole process is called "Metropolis Coupling".
 
 Honestly I'm not sure how useful it is. In some rare cases it can find superior solutions.
+
+## Example Games
+
+Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be defeated ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7102762)).
 
 ## Problems
 
