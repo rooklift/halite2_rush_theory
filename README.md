@@ -62,7 +62,7 @@ Our theory of combat suffers from literal edge and corner cases: we will general
 
 Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=7069201)...
 
-The biggest problems come when the enemy splits up. For example, I shouldn't have won [this game](https://halite.io/play/?game_id=7226052). This sort of thing was my Achilles' Heel, really. In [this game](https://halite.io/play/?game_id=7361129) at around turn 9, the Genetic Algorithm must split the ships so as to get near both groups of enemies. Unfortunately it makes the wrong choice of how to do this. I couldn't think of a good way to make the fitness function prefer the correct split.
+For a long time I struggled with situations where the enemy splits up their forces. For example, I shouldn't have won [this game](https://halite.io/play/?game_id=7226052). The problem lay in the fitness function, again. In [this game](https://halite.io/play/?game_id=7361129) at around turn 9, the Genetic Algorithm must split the ships so as to get near both groups of enemies. Unfortunately it makes the wrong choice of how to do this. I finally fixed this in v98.
 
 ## Defense
 
