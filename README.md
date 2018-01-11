@@ -54,7 +54,7 @@ At the time of writing (Jan 10th), looking at my last 10,000 games, exactly 1,37
 
 Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function based on expected damage. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
 
-Sometimes we "win" the rush but the enemy has successfully built a ship and escaped with it. If we chase it forever, he will win on tiebreaker. To avoid this, if possible, I turn off the GA, send one ship to chase the enemy and another ship to dock and build up a fleet, as in [this game](https://halite.io/play/?game_id=7453830).
+Sometimes we "win" the rush but the enemy has successfully built a ship and escaped with it. If we chase it forever, he will win on the "ships built" tiebreaker. To avoid this, if possible, I turn off the GA, send one ship to chase the enemy and another ship to dock and build up a fleet, as in [this game](https://halite.io/play/?game_id=7453830).
 
 Our theory doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this, since it almost never mattered. But [this game](https://halite.io/play/?game_id=7471538) was a rare exception. At around turn 230, I am ahead on health, but the opponent simply splits his ships and wins.
 
