@@ -52,6 +52,8 @@ At the time of writing (Jan 10th), looking at my last 10,000 games, exactly 1,37
 
 ## Problems
 
+Our theory is great if we can get into the right situation fast enough. But if the enemy is docked, he will be producing ships soon and we will lose; so we must use more aggressive play, ignoring our theory. The most successful defenders exploited the bot's imperfect play while trying to close the gap ([one](https://halite.io/play/?game_id=7349762), [two](https://halite.io/play/?game_id=7549402)).
+
 Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the genetic algorithm, but with a different fitness function based on expected damage. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
 
 Sometimes we "win" the rush but the enemy has successfully built a ship and escaped with it. If we chase it forever, he will win on the "ships built" tiebreaker. To avoid this, if possible, I turn off the GA, send one ship to chase the enemy and another ship to dock and build up a fleet, as in [this game](https://halite.io/play/?game_id=7453830).
