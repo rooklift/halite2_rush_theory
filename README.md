@@ -1,6 +1,6 @@
 # Theory and Practice of Halite 2 Rushes
 
-My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) is ordinary in many ways, but in one way it's special: I spent a lot of effort on the 1v1 melee code. In the situations it was designed for, it's one of the best bots there is. Sadly, those situations arose about once every seven games...
+My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) was pretty ordinary in most of its games. But in 1v1 rushes, it had a winrate of *about 80%*. This document explains why...
 
 ## Theory: 6 Ship Battles
 
