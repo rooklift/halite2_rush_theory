@@ -52,7 +52,7 @@ At the time of writing (Jan 12th), looking at my last 10000 games:
 
 * 9610 were not challenges.
 * Out of those 9610, exactly 3779 were 2 player games.
-* Out of those 3779, exactly 1258 were rushes.
+* Out of those 3779, exactly 1258 were rushes (defined as < 10 ships produced).
 
 My win/loss record in those games was **1039-219**.
 
