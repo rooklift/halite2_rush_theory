@@ -48,7 +48,13 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7087777)).
 
-At the time of writing (Jan 12th), looking at my last 10,000 games, exactly 1,389 of them could be considered 1v1 rush games (2 players only, 10 or fewer ships produced). In those games, my win/loss record was **1142-247**.
+At the time of writing (Jan 12th), looking at my last 10000 games:
+
+* 9610 were not challenges.
+* Out of those 9610, exactly 3779 were 2 player games.
+* Out of those 3779, exactly 1258 were rushes.
+
+My win/loss record in those games was **1039-219**.
 
 ## Problems
 
