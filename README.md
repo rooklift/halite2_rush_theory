@@ -72,7 +72,7 @@ For a long time I struggled with situations where the enemy splits up their forc
 
 If I'm not rushing myself, I defend by noticing I'm getting rushed and undocking. One thing few players spotted is that you can issue a thrust command during the final step of undocking (where `DockedStatus == UNDOCKING`) *and it will work*. You can also issue an undock command during the final step of docking.
 
-These two facts allow me to make useful moves 2 turns earlier than a naive defender; after undocking I simply transition into rush mode.
+These two facts allow me to make useful moves 2 turns earlier than a naive defender. See [this game](https://halite.io/play/?game_id=7671080), for example.
 
 ## 4 Player Games
 
