@@ -64,7 +64,7 @@ if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
 
 ## Problems
 
-Our theory is great if we can get into the right situation fast enough. But if the enemy is docked, he will be producing ships soon and we will lose; so we must use more aggressive play, ignoring our theory. The most successful defenders exploited the bot's imperfect play while trying to close the gap ([one](https://halite.io/play/?game_id=7349762), [two](https://halite.io/play/?game_id=7549402)).
+Our theory is great if we can get into the right situation fast enough. But if the enemy is docked, he will be producing ships soon and we will lose; so we must use more aggressive play, ignoring our theory. The most successful defenders exploited the bot's imperfect play while trying to close the gap ([one](https://halite.io/play/?game_id=7349762), [two](https://halite.io/play/?game_id=7549402), [three](https://halite.io/play/?game_id=8134047)).
 
 Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the Genetic Algorithm, but with a different fitness function based on expected damage. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
 
