@@ -58,7 +58,7 @@ My win/loss record in those games was **1141-205**. At this point (Jan 17th), I 
 
 ```Golang
 if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
-		ret.RushChoice = NOT_RUSHING
+		RushChoice = NOT_RUSHING
 }
 ```
 
