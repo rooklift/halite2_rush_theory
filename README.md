@@ -48,13 +48,13 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7087777)).
 
-At the time of writing (Jan 13th), looking at my last 10000 games:
+At the time of writing (Jan 17th), looking at my last 10000 games:
 
-* 9610 were not challenges.
-* Out of those 9610, exactly 3734 were 2 player games.
-* Out of those 3779, exactly 1253 were rushes (defined as < 10 ships produced).
+* 9671 were not challenges.
+* Out of those 9671, exactly 3592 were 2 player games.
+* Out of those 3592, exactly 1346 were rushes (defined as < 10 ships produced, and no timeout on turn 1).
 
-My win/loss record in those games was **1041-212**.
+My win/loss record in those games was **1141-205**. At this point (Jan 17th), I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so I disabled rushing until finals.
 
 ## Problems
 
