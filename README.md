@@ -54,7 +54,13 @@ At the time of writing (Jan 17th), looking at my last 10000 games:
 * Out of those 9671, exactly 3592 were 2 player games.
 * Out of those 3592, exactly 1346 were rushes (defined as < 10 ships produced, and no timeout on turn 1).
 
-My win/loss record in those games was **1141-205**. At this point (Jan 17th), I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so not every version afterwards had rushing enabled.
+My win/loss record in those games was **1141-205**. At this point (Jan 17th), I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so I temporarily turned off rushing. My hope was, *out of sight, out of mind*, and that my competitors would neglect rush defense in these final days. My plan was for the bot to only rush in finals:
+
+```Golang
+if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
+  RushChoice = NOT_RUSHING
+}
+```
 
 ## Problems
 
