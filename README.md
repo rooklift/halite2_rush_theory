@@ -48,13 +48,9 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7087777)).
 
-At the time of writing (Jan 17th), looking at my last 10000 games:
+Looking at my last 1500 rush games *in versions which had rushing enabled*, I had a record of *1264-236*.
 
-* 9671 were not challenges.
-* Out of those 9671, exactly 3592 were 2 player games.
-* Out of those 3592, exactly 1346 were rushes (defined as < 10 ships produced, and no timeout on turn 1).
-
-My win/loss record in those games was **1141-205**. At this point (Jan 17th), I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so I temporarily turned off rushing. My hope was, *out of sight, out of mind;* and that my competitors would neglect rush defense in these final days if I didn't do it to them. My plan was for the bot to only rush in finals:
+Around January 18th, I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so I temporarily turned off rushing. My hope was, *out of sight, out of mind;* and that my competitors would neglect rush defense in these final days if I didn't do it to them. My plan was for the bot to only rush in finals:
 
 ```Golang
 if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
