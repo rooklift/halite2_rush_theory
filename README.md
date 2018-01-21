@@ -56,7 +56,7 @@ if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
 }
 ```
 
-Looking at my last 1500 rush games, *in versions which had rushing enabled*, I had a record of **1264-236**.
+Looking at the last 1500 rush games *in versions which had rushing enabled*, I had a record of **1264-236**.
 
 ## Problems
 
