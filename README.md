@@ -1,6 +1,6 @@
 # Theory and Practice of Halite 2 Rushes
 
-My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) was pretty ordinary in most games. But in 1v1 rushes, *it had a winrate over 80%*. Here's why...
+My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) was pretty ordinary in most games. But in 1v1 rushes, *it had a winrate around 90%*. Here's why...
 
 ## Theory: 6 Ship Battles
 
@@ -48,8 +48,6 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7087777)).
 
-Looking at my last 1500 rush games, *in versions which had rushing enabled*, I had a record of *1264-236*.
-
 Around January 18th, I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so I temporarily turned off rushing. My hope was, *out of sight, out of mind;* and that my competitors would neglect rush defense in these final days if I didn't do it to them. My plan was for the bot to only rush in finals:
 
 ```Golang
@@ -57,6 +55,8 @@ if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
     RushChoice = NOT_RUSHING
 }
 ```
+
+Looking at things now, in the middle of Finals (January 26th), the bot's score in 2 player rush games is **271-22**. See `results.txt`.
 
 ## Problems
 
