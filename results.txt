@@ -1,8 +1,8 @@
-MID-FINALS RUSH RESULTS: 2p games, < 10 ships produced
+MID-FINALS RUSH RESULTS
 Compiled halfway through finals (current position: 17)
 
 Games:        2352
-Rushes:       293
+Rushes:       293      (2p games, < 10 ships produced)
 
 Wins:         271
 Losses:       22
