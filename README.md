@@ -21,7 +21,7 @@ When Pink places his ships in a sweet spot, one of two things will happen:
 * Blue will take the same amount of damage as Pink (possibly zero).
 * Blue will take more damage than pink, because one of Blue's ships came within range of two (or three) Pink ships.
 
-It's worth noting that this approach uses no prediction at all. We prepare for what the enemy could do, not what we think he will do.
+It's worth noting that this approach uses no prediction at all. We prepare for what the enemy could do, not what we think he will do. Therefore, it cannot really be exploited.
 
 ## Real World Example
 
