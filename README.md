@@ -86,4 +86,6 @@ These two facts allow me to make useful moves 2 turns earlier than a naive defen
 
 In 4 player games, there are initially two sub-games: the left side 1v1, and the right side 1v1. Rushes are therefore possible, but there's a sort of prisoner's dilemma: if I rush my opponent, and he defends adequately, we are likely to get 3rd and 4th. If we both play normally, we might both get a chance at 1st or 2nd.
 
-I never rush in 4 player games. I do defend though. Here's a [rare example](https://halite.io/play/?game_id=7286792) of that going as well as possible. ([Bonus game](https://halite.io/play/?game_id=7908259).)
+I never rush in 4 player games. In fact, I dock without even looking at the opponent.
+
+I do defend though, by detecting incoming ships at the earliest moment when undocking is possible. Here's a [rare example](https://halite.io/play/?game_id=7286792) of that going as well as possible. ([Bonus game](https://halite.io/play/?game_id=7908259).)
