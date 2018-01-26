@@ -21,6 +21,8 @@ When Pink places his ships in a sweet spot, one of two things will happen:
 * Blue will take the same amount of damage as Pink (possibly zero).
 * Blue will take more damage than pink, because one of Blue's ships came within range of two (or three) Pink ships.
 
+It's worth noting that this approach uses no prediction at all. We prepare for what the enemy could do, not what we think he will do.
+
 ## Real World Example
 
 Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely, and the enemy gets obliterated.
