@@ -1,6 +1,6 @@
 # Theory and Practice of Halite 2 Rushes
 
-My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) was pretty ordinary in most games. But in 1v1 rushes, *it had a winrate around 90%*. Here's why...
+My [Halite 2 bot](https://github.com/fohristiwhirl/gohalite2) was pretty ordinary in most games. But in 1v1 rushes, *it had a winrate over 85%*. Here's why...
 
 ## Theory: 6 Ship Battles
 
