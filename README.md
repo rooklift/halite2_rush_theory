@@ -74,7 +74,7 @@ Our theory of combat suffers from literal edge and corner cases: we will general
 
 Planets sometimes cause the same problem. At turn 11 in [this game](https://halite.io/play/?game_id=7328811), one of my ships can't make any good move because it's come very close to a planet. Again, this was mostly fixed by changing the fitness function to make it dislike being near planets. Still, even without getting (very) near planets, it occasionally happens that our only move to stay in the sweet spots would crash into a planet, e.g. in [this game](https://halite.io/play/?game_id=7730407) at turn 8.
 
-Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=7069201)...
+Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=9362165)...
 
 ## Defense
 
