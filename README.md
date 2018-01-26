@@ -56,7 +56,7 @@ if time.Now().Before(time.Date(2018, time.January, 23, 5, 0, 0, 0, time.UTC)) {
 }
 ```
 
-Looking at things now, in the middle of Finals (January 26th), the bot's score in 2 player rush games is **271-22**. See `results.txt`.
+Looking at things now, in the middle of Finals (January 26th), the bot's score in 2 player rush games is **271-22**. For specifics, see `results.txt`.
 
 ## Problems
 
