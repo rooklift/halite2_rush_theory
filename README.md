@@ -31,6 +31,8 @@ Note that the sweet spots involved are often fairly small. In the diagram below 
 
 ## Practice: Genetic Algorithm
 
+[Edit: I believe this is more properly called a Hill-Climbing Algorithm. A true Genetic Algorithm has genetic crossover.]
+
 A smarter person than me might use mathematics to put his ships in the sweet spots. However, I chose to use a Genetic Algorithm, which works as follows. First, we generate a random "genome" (list of moves) and then do the following:
 
 * Mutate the genome randomly, giving one of the ships a new move.
