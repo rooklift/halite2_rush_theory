@@ -1,7 +1,7 @@
 FINALS RESULTS
 Position: 17
 
-Games:        11910
+Games:        11909
 
 2p Games:     3622   (an extra 247 games against DQ'd players ignored)
 Wins:         2490
