@@ -14,7 +14,8 @@ Non-Rushes:   2167
 Wins:         1211   (55.9%)
 Losses:       956
 
-Rush Results Only:
+--------------------------------------------------
+Rush Results Only (2p games, < 10 ships produced):
 
 9770034  O    mellendo
 9770032  O    spelljack
