@@ -19,7 +19,7 @@ On the left are the threat ranges of the three Blue ships - i.e. how far they ca
 When Pink places his ships in a sweet spot, one of two things will happen:
 
 * Blue will take the same amount of damage as Pink (possibly zero).
-* Blue will take more damage than pink, because one of Blue's ships came within range of two (or three) Pink ships.
+* Blue will take more damage than Pink, because one of Blue's ships came within range of two (or three) Pink ships.
 
 It's worth noting that this approach uses no prediction at all. We prepare for what the enemy could do, not what we think he will do. Therefore, it cannot really be exploited.
 
