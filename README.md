@@ -25,7 +25,7 @@ It's worth noting that this approach uses no prediction at all. We prepare for w
 
 ## Real World Example
 
-Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely, and the enemy gets obliterated.
+Note that the sweet spots involved are often fairly small. In the diagram below (turn 11 of a [real game](https://2017.halite.io/play/?game_id=7421675)), we need to get our ships into the tiny blue zone (we only care about the centre of the ships though, since we are measuring weapons range centre to centre). They all fit, barely, and the enemy gets obliterated.
 
 ![Sweet Spots 2](https://raw.githubusercontent.com/fohristiwhirl/scraps/master/ranges2.gif)
 
@@ -50,7 +50,7 @@ Honestly I'm not sure how useful it is. In some rare cases it can find superior 
 
 ## Example Games and Results
 
-Ideally, the result should look [something like this](https://halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://halite.io/play/?game_id=6987743), [two](https://halite.io/play/?game_id=7087777)).
+Ideally, the result should look [something like this](https://2017.halite.io/play/?game_id=7146061). Even rather strong bots can be safely dealt with ([one](https://2017.halite.io/play/?game_id=6987743), [two](https://2017.halite.io/play/?game_id=7087777)).
 
 Around January 18th, I felt too many people were seeing the bot's rushes and some seemed to be changing their play to defend against it, so I temporarily turned off rushing. My hope was, *out of sight, out of mind;* and that my competitors would neglect rush defense in these final days if I didn't do it to them. My plan was for the bot to only rush in finals:
 
@@ -64,27 +64,27 @@ In Finals, the bot's score in 2 player rush games was **1279-176**. For specific
 
 ## Problems
 
-Our theory is great if we can get into the right situation fast enough. But if the enemy is docked, he will be producing ships soon and we will lose; so we must use more aggressive play, ignoring our theory. The most successful defenders exploited the bot's imperfect play while trying to close the gap ([one](https://halite.io/play/?game_id=7349762), [two](https://halite.io/play/?game_id=7549402), [three](https://halite.io/play/?game_id=8134047)).
+Our theory is great if we can get into the right situation fast enough. But if the enemy is docked, he will be producing ships soon and we will lose; so we must use more aggressive play, ignoring our theory. The most successful defenders exploited the bot's imperfect play while trying to close the gap ([one](https://2017.halite.io/play/?game_id=7349762), [two](https://2017.halite.io/play/?game_id=7549402), [three](https://2017.halite.io/play/?game_id=8134047)).
 
-Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the Genetic Algorithm, but with a different fitness function based on expected damage. [This game](https://halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
+Sometimes two bots will get into a situation where neither is willing to move. I try to detect such situations and then use the fact that we know where they will be to make perfectly destructive moves. I still use the Genetic Algorithm, but with a different fitness function based on expected damage. [This game](https://2017.halite.io/play/?game_id=7094226) shows the result, at turns 37, 67, and 121.
 
-Sometimes we "win" the rush but the enemy has successfully built a ship and escaped with it. If we chase it forever, he will win on the "ships built" tiebreaker. To avoid this, if possible, I turn off the GA, send one ship to chase the enemy and another ship to dock and build up a fleet, as in [this game](https://halite.io/play/?game_id=7453830).
+Sometimes we "win" the rush but the enemy has successfully built a ship and escaped with it. If we chase it forever, he will win on the "ships built" tiebreaker. To avoid this, if possible, I turn off the GA, send one ship to chase the enemy and another ship to dock and build up a fleet, as in [this game](https://2017.halite.io/play/?game_id=7453830).
 
-For a long time I struggled with situations where the enemy splits up their forces. For example, I shouldn't have won [this game](https://halite.io/play/?game_id=7226052). I finally fixed how the fitness function feels about this sort of thing in v98/99.
+For a long time I struggled with situations where the enemy splits up their forces. For example, I shouldn't have won [this game](https://2017.halite.io/play/?game_id=7226052). I finally fixed how the fitness function feels about this sort of thing in v98/99.
 
-Our theory doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this, since it almost never mattered. But [this game](https://halite.io/play/?game_id=7471538) was a rare exception. At around turn 230, I am ahead on health, but the opponent simply splits his ships and wins.
+Our theory doesn't take into account differences in ship health. If a 63 health ship fights a 127 health ship, they will do the same damage to each other (which is an acceptable draw according to our theory) but one will die. In [this game](https://2017.halite.io/play/?game_id=7095394) I temporarily fall behind on ships (though not on total health) at turn 95. I never bothered worrying about this, since it almost never mattered. But [this game](https://2017.halite.io/play/?game_id=7471538) was a rare exception. At around turn 230, I am ahead on health, but the opponent simply splits his ships and wins.
 
-Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://halite.io/play/?game_id=7066056) at around turn 67. I mostly fixed this by making the fitness function dislike being near the edge, although several of my losses in Finals are still of this sort.
+Our theory of combat suffers from literal edge and corner cases: we will generally be backing away from enemy ships, possibly leading to us running out of space. For example, see [this game](https://2017.halite.io/play/?game_id=7066056) at around turn 67. I mostly fixed this by making the fitness function dislike being near the edge, although several of my losses in Finals are still of this sort.
 
-Planets sometimes cause the same problem. At turn 11 in [this game](https://halite.io/play/?game_id=7328811), one of my ships can't make any good move because it's come very close to a planet. Again, this was mostly fixed by changing the fitness function to make it dislike being near planets. Still, even without getting (very) near planets, it occasionally happens that our only move to stay in the sweet spots would crash into a planet, e.g. in [this game](https://halite.io/play/?game_id=7730407) at turn 8.
+Planets sometimes cause the same problem. At turn 11 in [this game](https://2017.halite.io/play/?game_id=7328811), one of my ships can't make any good move because it's come very close to a planet. Again, this was mostly fixed by changing the fitness function to make it dislike being near planets. Still, even without getting (very) near planets, it occasionally happens that our only move to stay in the sweet spots would crash into a planet, e.g. in [this game](https://2017.halite.io/play/?game_id=7730407) at turn 8.
 
-Sometimes the enemy just runs away, as in [this game](https://halite.io/play/?game_id=9362165). Sometimes we win the tiebreak...
+Sometimes the enemy just runs away, as in [this game](https://2017.halite.io/play/?game_id=9362165). Sometimes we win the tiebreak...
 
 ## Defense
 
 If I'm not rushing myself, I defend by noticing I'm getting rushed and undocking. One thing few players spotted is that you can issue a thrust command during the final step of undocking (where `DockedStatus == UNDOCKING`) *and it will work*. You can also issue an undock command during the final step of docking.
 
-These two facts allow me to make useful moves 2 turns earlier than a naive defender. See [this game](https://halite.io/play/?game_id=7671080), for example.
+These two facts allow me to make useful moves 2 turns earlier than a naive defender. See [this game](https://2017.halite.io/play/?game_id=7671080), for example.
 
 ## 4 Player Games
 
@@ -92,4 +92,4 @@ In 4 player games, there are initially two sub-games: the left side 1v1, and the
 
 I never rush in 4 player games. In fact, I dock without even looking at the opponent.
 
-I do defend though, by detecting incoming ships at the earliest moment when undocking is possible. Here's a [rare example](https://halite.io/play/?game_id=7286792) of that going as well as possible. ([Bonus game](https://halite.io/play/?game_id=7908259).)
+I do defend though, by detecting incoming ships at the earliest moment when undocking is possible. Here's a [rare example](https://2017.halite.io/play/?game_id=7286792) of that going as well as possible. ([Bonus game](https://2017.halite.io/play/?game_id=7908259).)
